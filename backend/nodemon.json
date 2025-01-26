@@ -1,0 +1,4 @@
+{
+    "watch":["src","prisma"],
+    "ext":".ts,.js"
+}
