@@ -9,8 +9,11 @@ import {
 } from "../controllers/product.js"; 
 
 import { createCategory,getAllCategories,getCategoryById,updateCategory,deleteCategory } from "../controllers/productCategory.js";
+import { adminLogin } from "../controllers/authController.js";
 
 const router = express.Router();
+
+router.post("/admin/login",adminLogin)
 
 // Product routes
 router.post("/products", createProduct); 
